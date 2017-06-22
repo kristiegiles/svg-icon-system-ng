@@ -1,15 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>SvgIconSystemNg1</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <svg xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="caret" viewBox="0 0 24 24">
     <path d="M7 10l5 5 5-5z"/>
     <path d="M0 0h24v24H0z" fill="none"/>
@@ -60,6 +50,3 @@
     <path d="M0 0h24v24H0z" fill="none"/>
 
 </symbol></svg>
-  <app-root></app-root>
-</body>
-</html>
