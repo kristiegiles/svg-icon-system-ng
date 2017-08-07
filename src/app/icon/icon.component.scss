@@ -1,7 +1,21 @@
 .icon{
-	width: 24px;
-	height: 24px;
-	display: inline-block;
-	margin: 5px;
-	fill: #999;
+	width: 1.2em;
+	height: 1.2em;
+	fill: currentColor;
+	vertical-align: -0.24em;
+}
+
+.icon--circle-bg{
+	background: grey;
+	border-radius:50%;
+	padding:5px;
+	fill: white;
+}
+
+.icon--red{
+	fill: red;
+}
+
+.icon--flipped{
+	transform: rotate(180deg);
 }

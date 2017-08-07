@@ -1,16 +1,15 @@
 {
-  "name": "svg-icon-system-ng",
+  "name": "svg-test",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "webpack-dev-server --port=4201",
+    "start": "webpack-dev-server --port=4200",
     "build": "webpack",
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
     "e2e": "protractor ./protractor.conf.js",
-    "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
-    "icongen": "svg-sprite-generate -d src/icons/src -o src/icons/sprite.svg"
+    "pree2e": "webdriver-manager update --standalone false --gecko false --quiet"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +22,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "cheerio": "1.0.0-rc.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
@@ -53,15 +53,13 @@
     "postcss-loader": "^1.3.3",
     "postcss-url": "^5.1.2",
     "protractor": "~5.1.2",
-    "raw-loader": "^0.5.1",
+    "raw-loader": "0.5.1",
     "sass-loader": "^6.0.3",
     "script-loader": "^0.7.0",
     "source-map-loader": "^0.2.0",
     "style-loader": "^0.13.1",
     "stylus-loader": "^3.0.1",
-    "svg-sprite-generator": "0.0.7",
-    "svg-sprite-webpack-plugin": "1.0.3",
-    "svgo": "0.7.2",
+    "svg-inline-loader": "0.8.0",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3",

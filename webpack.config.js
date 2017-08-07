@@ -70,7 +70,10 @@ module.exports = {
   "resolveLoader": {
     "modules": [
       "./node_modules"
-    ]
+    ],
+    alias: {
+      'my-custom-svg-loader': path.join(__dirname, 'loaders', 'my-custom-svg-loader.js')
+    }
   },
   "entry": {
     "main": [
@@ -107,8 +110,8 @@ module.exports = {
         "loader": "raw-loader"
       },
       {
-        "test": /\.(eot|svg)$/,
-        "loader": "file-loader?name=[name].[hash:20].[ext]"
+        "test": /\.svg$/,
+        "loaders": ["svg-inline-loader", "my-custom-svg-loader"]
       },
       {
         "test": /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
@@ -354,7 +357,7 @@ module.exports = {
         "favicon.ico"
       ],
       "globOptions": {
-        "cwd": "/Users/kristiegiles/dev/kg/svg-icon-system-ng/src",
+        "cwd": "/Users/kristiegiles/dev/kg/svg-test/src",
         "dot": true,
         "ignore": "**/.gitkeep"
       }

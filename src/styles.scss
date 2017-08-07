@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-@import "app/icon/icon.component"
+body{
+	color:#333;
+	font-size:24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+	background: #666;
+	color: white;
+	padding:5px 10px;
+	font-size: 16px;
+	border:none;
+	border-radius: 4px;
+}
+
+.u-margin-right{
+	margin-right: 5px;
+}
+
+.u-margin-left{
+	margin-left: 5px;
+}
