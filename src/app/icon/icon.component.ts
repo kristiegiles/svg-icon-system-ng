@@ -1,5 +1,5 @@
 import { Component, Input, ViewChild, AfterViewInit, ElementRef } from '@angular/core'
-declare function require(string): string;
+declare function require(string): string; // hack to make typescript happy
 
 @Component({
   selector: 'icon',
@@ -8,8 +8,8 @@ declare function require(string): string;
 })
 
 export class IconComponent implements AfterViewInit {
-  @Input() slug: string
-  @Input() svgClassNames: string
+  @Input() slug: string //must match filename of icon in 'icons' directory
+  @Input() svgClassNames: string //additional classes you want on the svg
   @ViewChild('svgPathData', {read: ElementRef}) svgPathData: ElementRef;
 
   ngAfterViewInit(): void {
