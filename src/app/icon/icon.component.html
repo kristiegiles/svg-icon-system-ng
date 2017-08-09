@@ -1,4 +1,4 @@
-<svg [ngClass]="svgClassNames ? 'icon icon--'+slug+' '+svgClassNames: 'icon icon--'+slug"
+<svg class="icon" [ngClass]="{['icon--' + slug]: true, [svgClassNames]: svgClassNames}"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 24 24"
 	aria-hidden="true"

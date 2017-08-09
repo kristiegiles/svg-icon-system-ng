@@ -9,7 +9,7 @@ declare function require(string): string; // hack to make typescript happy
 
 export class IconComponent implements AfterViewInit {
   @Input() slug: string //must match filename of icon in 'icons' directory
-  @Input() svgClassNames: string //additional classes you want on the svg
+  @Input() svgClassNames: string = "" //additional classes you want on the svg
   @ViewChild('svgPathData', {read: ElementRef}) svgPathData: ElementRef;
 
   ngAfterViewInit(): void {
