@@ -22,8 +22,11 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@types/requirejs": "2.1.30",
+    "@types/webpack": "3.0.9",
     "cheerio": "1.0.0-rc.2",
     "core-js": "^2.4.1",
+    "kg-ui": "file:///Users/kristiegiles/dev/kg/kg-ui/kg-ui-0.0.0.tgz",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },

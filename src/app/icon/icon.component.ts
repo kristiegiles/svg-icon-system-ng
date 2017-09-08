@@ -2,7 +2,7 @@ import { Component, Input, ViewChild, AfterViewInit, ElementRef } from '@angular
 declare function require(string): string; // hack to make typescript happy
 
 @Component({
-  selector: 'icon',
+  selector: 'icon-old',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss']
 })
