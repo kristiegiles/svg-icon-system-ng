@@ -1,8 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { IconComponent } from 'kg-ui'
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { AppComponent } from './app.component'
+import {IconComponent} from './icon/icon.component'
 
 @NgModule({
   declarations: [
